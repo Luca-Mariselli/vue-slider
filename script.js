@@ -70,12 +70,27 @@ createApp({
             }
         },
         
-    
-        
+        loopSlideAvanti(){
+            if(this.activeSlide==4){
+                this.activeSlide = 0
+            } else {
+                this.activeSlide++
+            }
+        },
+
+        loopSlideIndietro(){
+            if(this.activeSlide==0){
+                this.activeSlide = 4
+            } else {
+                this.activeSlide--
+            }
+        },
     },
 
     mounted(){
         console.log(this.slides)
     }
+
+    
 
 }).mount('#app')

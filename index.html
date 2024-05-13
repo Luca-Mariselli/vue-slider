@@ -21,8 +21,9 @@
                     <div class="text">{{slide.text}}</div>
                 </div>
                 
-                <button @click="activeSlide++">Avanti</button>
-                <button @click="activeSlide--">Indietro</button>
+                <button @click="loopSlideAvanti()">Avanti</button>
+                <button @click="loopSlideIndietro()">Indietro</button>
+                <input type="number" v-model="activeSlide">
                 
                 
 
