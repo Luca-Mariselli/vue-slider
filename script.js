@@ -54,7 +54,8 @@ createApp({
                 ],
                 
 
-            activeSlide: 0    
+            activeSlide: 0, 
+            
         }
 
         
@@ -85,10 +86,15 @@ createApp({
                 this.activeSlide--
             }
         },
+
+        thumbVisible(numero){
+            this.activeSlide = numero
+        }
     },
 
     mounted(){
         console.log(this.slides)
+        
     }
 
     

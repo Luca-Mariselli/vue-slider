@@ -24,13 +24,14 @@
                 <button @click="loopSlideAvanti()">Avanti</button>
                 <button @click="loopSlideIndietro()">Indietro</button>
                 <input type="number" v-model="activeSlide">
+
                 
                 
 
                 <div class="thumbs">
-                    <div class="prev"></div>
-                    <div class="next"></div>
-                    <div class="thumb" :class="isVisible(i)" v-for="slide, i in slides">
+                    <div class="prev" @click="loopSlideIndietro()"></div>
+                    <div class="next" @click="loopSlideAvanti()"></div>
+                    <div class="thumb" @click="thumbVisible(i)" :class="isVisible(i)" v-for="slide, i in slides">
                         <img :src="slide.image" alt="">
                     </div>
                     
