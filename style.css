@@ -16,6 +16,11 @@
     width: 700px;
     height: 300px;
     position: relative;
+    display: none;
+}
+
+.active{
+    display: block;
 }
 
 .item img {
